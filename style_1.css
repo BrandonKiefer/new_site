@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+* {
+    margin: 0px;
+}
+
+html::-webkit-scrollbar{
+    width:0px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(224, 219, 226);
+    border-style: solid 3px black;
+}
+
+a:hover {
+    color: rgb(88, 20, 84);
+}
+
+
+header {
+    display: flex;
+    position:fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: #000000;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 5vh;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Righteous';
+    z-index: 1;
+}
+
+aside{
+    margin-right: 10px;
+}
+
+
+ul {
+    margin-top: .5vh;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 10%;
+}
+
+nav{
+    width: 100%;
+    height: 3vh;
+    position: fixed;
+    top: 35px;
+    left: 0;
+    background-color: #000000
+}
+
+body {
+    background-size: cover;
+    background-image: url("images/SF_logo.png"),
+    linear-gradient( 135deg, #dac3d8a8, #a2a5d1);
+    background-size: 45%,
+    100%;
+    background-position: bottom right 20%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    color: white;
+    font-family: 'Permanent Marker';
+}
+
+
+div.chat_bubble {
+    background-color: rgb(187, 255, 244);
+    border: 2px solid #000;
+    left: 54%;
+    margin: -8% 10% 0 -7%;
+    padding: 1%;
+    position: absolute;
+   
+    
+    -webkit-animation: fade_in 3s 1;
+    -moz-animation: fade_in 3s 1;
+    -ms-animation: fade_in 3s 1;
+    animation: fade_in 3s 1;
+    animation-duration: 7s;
+  }
+
+@keyframes fade_in {
+ 0%{
+     opacity: 0;
+
+ }
+40%{
+    opacity: 0;
+}
+
+ 100%{
+     opacity: 1;
+ }
+}
+
+
+
+  .bio{
+      font-size: 1.8vh;
+    max-height: 80%;
+  }
+
+  img{
+    position: absolute;
+    margin: -64px 0 0 0;
+ }
+
+
+@media screen and (min-width: 260px) {
+    section.content {
+    font-size: 1.7vh;
+    width: 100%;
+    margin: 25% 0 0 0;
+   
+    }
+    header {
+        height: 6.4vh;
+    }
+    nav{
+        height: 4vh;
+    }
+    main {
+        margin-top: 15%;
+    }
+    #skills {
+        display: absolute;
+        flex-direction: column;
+        font-size: 3vh;
+        margin: 15% 0 0 0;
+    }
+    .skills-description {
+        margin: 10vh 0 0 2vh;
+    }
+    #projects {
+        font-size: 3vh;
+        margin: 55% 50% 0 0;
+    }
+    img{
+        position: absolute;
+        margin: -38px 0 0 20vh;
+    }
+   }
+
+
+
+@media screen and (min-width: 480px) {
+    section.content {
+    font-size: 2.6vh;
+}
+header {
+    height: 6.4vh;
+}
+nav{
+    height: 4vh;
+}
+main {
+    margin-top: 16%;
+}
+#projects {
+    font-size: 3vh;
+    margin: 30% 75% 0 0;
+}
+img{
+    position: absolute;
+    margin: 111px 0 0 20vh;
+}
+}
+
+   @media screen and (min-width: 768px) {
+    section.content {
+    font-size: 3vh;
+    }
+    main {
+        margin-top: 12%;
+        margin-right: 15%;
+    }
+    #projects {
+        font-size: 4vh;
+        margin: 35% 80% 0 0;
+    }
+    img{
+        position: absolute;
+        margin: 154px 0 0 15vh;
+     }
+
+    }
+
+   @media screen and (min-width: 960px) {
+    section.content {
+    font-size: 3vh;
+    }
+    main {
+        margin: 8% 20% 10% 0;
+    }
+    #projects {
+        font-size: 5vh;
+        margin: 28% 70% 0 0;
+    }
+    img{
+        position: absolute;
+        margin: -23px 0 0 25vh;
+     }
+     .bio {
+        font-size: 2.2vh;
+    }
+    }
+
+
+   @media screen and (min-width: 1200px) {
+    section.content {
+    font-size: 3vh;
+    }
+    main {
+    margin: 10% 85% 5% 0;
+    width: 75%;
+    border-radius: 40%;
+    }
+    #skills {
+        flex-direction: row;
+        margin: 14% 10% 0% 0;
+    }
+    #projects {
+        font-size: 6h;
+    }
+    img{
+        position: absolute;
+        margin: 0px 0 0 65vh;
+     }
+     .bio {
+        font-size: 2.3vh;
+    }
+    }   
+
+
+    @media screen and (min-width: 2560px) {
+        section.content {
+        font-size: 3vh;
+        }
+        main {
+        margin: 10% 85% 5% 0;
+        width: 75%;
+        border-radius: 40%;
+        }
+        #skills {
+            flex-direction: row;
+            margin: 21% 10% 0% 0;
+        }
+        #projects {
+            font-size: 6h;
+        }
+        img{
+            position: absolute;
+            margin: 35px 0 0 65vh;
+         }
+         .bio {
+            font-size: 2.3vh;
+        }
+        }   
+
+.projects {
+display: relative;
+margin: -25% 0 40% 60%;
+}
+
+.experience {
+    display: relative;
+    margin: -25% 0 40% 60%;
+}
+
+
+
+
+footer {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    bottom: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 6%;
+    font-family: 'Righteous';
+    z-index: 5;
+}
+
+#social {
+display: flex;
+color: white;
+}
+
+.bio {
+    position: relative;
+    margin: 10.9% 50% 0 4%;
+}
+
+.content {
+    margin-left: 10%;
+}
+
+#javascript {
+    display: none;
+}
+
+#css {
+    display: none;
+}
+
+#html_ {
+    display: none;
+}
+
+#photoshop {
+    display: none;
+}
+
+#french {
+    display: none;
+}
+
+#skills {
+    color: white;
+}
+
+.chat_bubble {
+    color: black;
+}
+
+#languages {
+    margin-right: 2%;
+}
+
+.rufus {
+    animation: rufusPeekUp 6s 1;
+    cursor: pointer;
+}
+
+
+@keyframes rufusPeekUp {
+    0% {
+    transform: translateX(0) translateY(100px);
+    }
+    50% {
+    transform: translateX(0) translateY(50px);
+    }
+    100% {
+    transform: translateX(0) translateY(0px);
+    }
+   }
+   
+#resume {
+    font-size: 7vh;
+    margin: 30% 0 0 5%;
+}
+
+
+.welcome {
+    margin: 0 0 0 20%;
+}
+
+div.projects {
+    display: flex;
+}
+
+.projects img {
+    gap: 20%;
+    width: 10%;
+    height: 10%;
+}
