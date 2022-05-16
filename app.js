@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+
+
+    function reveal() {
+        let reveals = document.querySelectorAll(".reveal");
+      
+        for (let i = 0; i < reveals.length; i++) {
+        //window.innerHeight will give us the height of the viewport
+          let windowHeight = window.innerHeight;
+          //getBoundingClientRect().top gives us this distance from the top of the viewport 
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          //elementVisible is the height at which the element should be revealed to the user.
+          let elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      
+      window.addEventListener("scroll", reveal);
+      
+      
+
+
     $(`.javascript`).on("click", function () {
         if (toggleActive = true) {
             $(`#css`).hide()
