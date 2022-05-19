@@ -1,18 +1,44 @@
 html{
+    margin: 0px;
     background-image: url("public/images/bg3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+a:link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:visited {
+      color: white;
+    text-decoration: none;
+  }
+
+  a#resume{
+      color: black;
+      text-decoration: underline;
+  }
+
+
 header {
+    color: white;
+    top: 0;
+    left: 0;
+    background-color: black;
     display: flex;
     flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
+
 
 div#language {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 15px;
 }
 
 nav{
@@ -23,6 +49,19 @@ nav{
 ul#links {
     display: flex;
     justify-content: space-around;
+}
+
+footer{
+    color: white;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    height: 5%;
+    z-index: 1;
 }
 
 ul#social {
@@ -43,6 +82,7 @@ h1{
 }
 
 h1#title{
+    margin-top: 110px;
     display: flex;
 }
 
@@ -72,9 +112,10 @@ ul.languages{
 }
 
 div#languages{
+    background-color: white;
     display: flex;
     flex-direction: column;
-    border: 2px dashed black;
+    border: 2px solid black;
     align-items: center;
     padding: 10px
 }
@@ -87,9 +128,10 @@ ul.libraries{
 }
 
 div#libraries{
+    background-color: white;
     display: flex;
     flex-direction: column;
-    border: 2px dashed black;
+    border: 2px solid black;
     align-items: center;
     padding: 10px
 }
@@ -102,8 +144,9 @@ ul.database{
 }
 
 div#database{
+    background-color: white;
     display: flex;
-    border: 2px dashed black;
+    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     padding: 10px
@@ -117,8 +160,9 @@ ul.other{
 }
 
 div#other{
+    background-color: white;
     display: flex;
-    border: 2px dashed black;
+    border: 2px solid black;
     flex-direction: column;
     align-items: center;
     padding: 10px
@@ -201,7 +245,9 @@ p#WRESTL{
     padding: 9px;
 }
 
-
+div.buffer{
+    height: 50px;
+}
 
 /*Animations for web-browsers */
 
@@ -210,6 +256,7 @@ p#WRESTL{
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
+
   }
   .reveal.active{
     transform: translateY(0);

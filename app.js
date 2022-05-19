@@ -115,7 +115,10 @@ $(document).ready(function () {
     $(`#projets`).text(`Projets`)
     $(`#experience`).text(`Expérience`)
     $(`#skill`).text(`Competences`)
-    $(`#welcome`).text(`Bienvenue á mon site web~ :)`)
+    $(`#about`).text(`Je suis un ingénieur-conseil en informatique qui possede des experiences en Javascript, React, HTML5, jQuery, CSS, 
+    et des environnement dorsal en utilisant le Python, Django, Express, REST APIs, MongoDB, et SQL. 
+    Avant d'être devenu un ingénieur-conseil, je me specialisais aux beaux-arts et le français-- ceux les deux continuent me soutenier comme je les intègre à ma vie du coding. 
+    J'espère me trouver en travaillant pour une entreprise qui partage mes valeurs en paix, le traitement respecteux aux animaux, et préserver le climat habitable de notre monde.`)
     $(`#resume`).replaceWith('<p id="resume">Pour voir mon CV, <a href="resume.pdf" target="_blank"><u>cliquer ici</u></a>.</p>')
     $(`#terminal`).text("Des jeux en Terminale")
     }    
@@ -125,9 +128,9 @@ $(document).ready(function () {
 const EN = document.getElementsByClassName("en")
 $(EN).click(function(){
 french = false;
-$(`.bio`).text(`I was born and grew up in Mobile, AL (a former French colony and the first capital of French-Louisiana prior to the aptly-named Louisiana Purchase).
-I attended the University of South Alabama where I double-majored in Studio Art and French. In 2012, I was fortunate to study abroad and attended Université Paul Valery in Montpellier, France.
-After graduating, I was accepted into the TAPIF program and returned to France as a teaching assistant. Upon finishing the program, I returned to the US and eventually found my way to the SF Bay Area where I have happily lived ever since.`);
+$(`#about`).text(`I'm a software engineer with experience in Javascript, React, HTML5, jQuery, CSS, and backend frameworks using Python, Django, Express, REST APIs, MongoDB, and SQL. 
+Prior to becoming a software engineer, my background was in Art and French which has been fun to incorporate into my coding life. 
+That said, I hope to lend my skills and offer creative solutions for companies that share my values in peace, treating animals with respect, and preserving our planet's habitable climate.`);
 $(rufus).attr("src", "images/rufus_closeup2.png")
 $(chatBubble).text("Hey buddy, it looks like you want to use my website. Need any help?")
 $(`#javascript`).text(`So far in Javascript I've made some terminal games.`)
