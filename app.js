@@ -3,8 +3,25 @@ $(document).ready(function () {
 
 
     function reveal() {
-        let reveals = document.querySelectorAll(".reveal");
+        let reveals = document.querySelectorAll(".reveal")
+        for (let i = 0; i < reveals.length; i++) {
+        //window.innerHeight will give us the height of the viewport
+          let windowHeight = window.innerHeight;
+          //getBoundingClientRect().top gives us this distance from the top of the viewport 
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          //elementVisible is the height at which the element should be revealed to the user.
+          let elementVisible = 125;
       
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      function revealsideR() {
+        let reveals = document.querySelectorAll(".reveal-side-r")
         for (let i = 0; i < reveals.length; i++) {
         //window.innerHeight will give us the height of the viewport
           let windowHeight = window.innerHeight;
@@ -20,10 +37,30 @@ $(document).ready(function () {
           }
         }
       }
+
+      function revealsideL() {
+        let reveals = document.querySelectorAll(".reveal-side-l")
+        for (let i = 0; i < reveals.length; i++) {
+        //window.innerHeight will give us the height of the viewport
+          let windowHeight = window.innerHeight;
+          //getBoundingClientRect().top gives us this distance from the top of the viewport 
+          let elementTop = reveals[i].getBoundingClientRect().top;
+          //elementVisible is the height at which the element should be revealed to the user.
+          let elementVisible = 150;
+      
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+
       
       window.addEventListener("scroll", reveal);
-      
-      
+      window.addEventListener("scroll", revealsideR);
+      window.addEventListener("scroll", revealsideL);
 
 
     $(`.javascript`).on("click", function () {
@@ -100,7 +137,7 @@ $(document).ready(function () {
     $(FR).click(function(){
     french = true;
     if (french === true){
-    $(`.bio`).text(`Je suis né á Mobile, AL (qui était la première colonie de la Louisiane-Française avant être acheté par les États-Unis en 1803.) 
+    $(`p.myBikeDatabase`).text(`Je suis né á Mobile, AL (qui était la première colonie de la Louisiane-Française avant être acheté par les États-Unis en 1803.) 
     J'étudias á l'Université de South Alabama où je me suis specialisé en deux sujets-- le français et l'art. 
     En 2012, j'avais la chance étudier á l'étranger á l'Université Paul Valery chez Montpellier, France. 
     Après avoir obtenu mon diplôme, j'étais permi dans le programme TAPIF pour être un assistant d'enseigner l'anglais.  

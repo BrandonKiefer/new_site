@@ -175,7 +175,7 @@ div.projects{
 }
 
 
-div#project-images{
+div.project-images{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -195,7 +195,7 @@ div#hells_spoon{
     align-items: center;
 }
 
-div#WRESTL{
+div.WRESTL{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +212,7 @@ p#about{
     padding: 30px
 }
 
-p#myBikeDatabase{
+p.myBikeDatabase{
     display: flex;
     flex-direction: column;
     width: 745px;
@@ -223,7 +223,7 @@ p#myBikeDatabase{
     padding: 10px;
 }
 
-p#Hells_Spoon{
+p.Hells_Spoon{
     display: flex;
     flex-direction: column;
     width: 560px;
@@ -234,7 +234,7 @@ p#Hells_Spoon{
     padding: 12px;
 }
 
-p#WRESTL{
+p.WRESTL{
     display: flex;
     flex-direction: column;
     width: 590px;
@@ -260,5 +260,31 @@ div.buffer{
   }
   .reveal.active{
     transform: translateY(0);
+    opacity: 1;
+  }
+
+  /*Animations load from X-axis */
+
+  .reveal-side-r{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+
+  }
+  .reveal-side-r.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .reveal-side-l{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+
+  }
+  .reveal-side-l.active{
+    transform: translateX(0);
     opacity: 1;
   }
