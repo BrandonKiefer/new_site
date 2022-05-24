@@ -3,6 +3,7 @@ html{
     background-image: url("public/images/bg3.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 a:link {
