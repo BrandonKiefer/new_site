@@ -190,6 +190,13 @@ img#myBikeDatabase{
     width: 450px; /* Set a small width */
 }
 
+img#wrestl{
+    border: 1px dashed #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 450px; /* Set a small width */
+}
+
 div#hells_spoon{
     display: flex;
     flex-direction: column;
