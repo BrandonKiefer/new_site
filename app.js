@@ -137,7 +137,7 @@ $(document).ready(function () {
     $(FR).click(function(){
     french = true;
     if (french === true){
-    $(`p.myBikeDatabase`).text(`Je suis né á Mobile, AL (qui était la première colonie de la Louisiane-Française avant être acheté par les États-Unis en 1803.) 
+    $(`p.myBikeDatabase`).text(`I suis né á Mobile, AL (qui était la première colonie de la Louisiane-Française avant être acheté par les États-Unis en 1803.) 
     J'étudias á l'Université de South Alabama où je me suis specialisé en deux sujets-- le français et l'art. 
     En 2012, j'avais la chance étudier á l'étranger á l'Université Paul Valery chez Montpellier, France. 
     Après avoir obtenu mon diplôme, j'étais permi dans le programme TAPIF pour être un assistant d'enseigner l'anglais.  
