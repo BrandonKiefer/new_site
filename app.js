@@ -104,6 +104,18 @@ $(document).ready(function () {
       Grace à l'intergiciel «Cloudinary», les utilisateurs connecté peuvent mettre en ligne des photos de leur plats.
       </p>
       </div>`)
+      $(`p.WRESTL`).replaceWith(`<p class="WRESTL reveal">Un jeu du mot «RESTful» API, cette application en React monts des informations des evenements dans l'histoire du catch. 
+      Le backend et l'interface utilisateur fonctionnent grace aux technologies suivante:
+      <br/>
+      <br/>
+      • Python<br/>
+      • Django<br/>
+      • React<br/>
+      <br/>
+      
+      Cette API raconte en détail des événements du catch par la promotion, l'anée, le note moyen de la qualité des matchs (fonde sur le journal historique «Wrestling Observer Newsletter»), 
+      le meilleure match, la durée, et s'il y a des points significatif.</p>
+  </div>`)
       $(`#projets`).text(`Projets`)
       $(`#experience`).text(`Expérience`)
       $(`#skill`).text(`Competences`)
@@ -159,6 +171,18 @@ $(`p.Hells_Spoon`).replaceWith(`<p class="Hells_Spoon reveal">Hell's Spoon is a 
 Inspired from the title of one of Chef Gordon Ramsay's most popular television shows, users are able to register their own accounts to post and share their favorite recipes. Thanks to a few pieces of middleware that have been
 integrated into this application, registered users can also upload photos of their own favorite homemade dishes!
 </p>
+</div>`)
+$(`p.WRESTL`).replaceWith(`<p class="WRESTL reveal">A play on the word RESTful API, this React application serves information about televised professional wrestling events in history. 
+The backend and frontend are powered using some of the following coding languages and libraries:<br/>
+<br/>
+• Python<br/>
+• Django<br/>
+• React<br/>
+<br/>
+
+This API details events by promotion (wrestling organization), event year, # of matches, average match 
+rating (based on original records from the Wrestling Observer Newsletter), best match (either based on the Wrestling Observer or my own opinion), 
+original duration of the show, and any remarkable/historically significant notes from the event. </p>
 </div>`)
     $(`#projets`).text(`Projects`)
     $(`#skill`).text(`Skills`)
