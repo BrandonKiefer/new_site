@@ -6,20 +6,26 @@ html{
     overflow-x: hidden;
 }
 
-a:link {
+#links a:link {
     text-decoration: none;
     color: white;
   }
   
-  a:visited {
+  #links a:visited {
       color: white;
     text-decoration: none;
   }
 
-  a#resume{
-      color: black;
-      text-decoration: underline;
-  }
+
+a:link{
+    color: black;
+    text-decoration: underline;
+} 
+
+a:visited{
+    color: black;
+    text-decoration: underline;
+} 
 
 
 header {

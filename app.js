@@ -129,7 +129,7 @@ $(document).ready(function () {
     <br/>
     <br/>
    <a id="resume" target="_blank" href="/POST-BOOTCAMP/new_site/resume_web.pdf">Cliquez ici</a></p>`)
-      $(`#resume`).replaceWith('<p id="resume">Pour voir mon CV, <a href="resume.pdf" target="_blank"><u>cliquer ici</u></a>.</p>')
+      $(`#resume`).replaceWith('<p id="resume">Pour voir mon CV, <a id="resume" href="resume.pdf" target="_blank"><u>cliquer ici</u></a>.</p>')
       $(`#terminal`).text("Des jeux en Terminale")
     }
   })
