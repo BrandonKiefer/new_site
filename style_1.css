@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Open+Sans&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap');
 
 html{
     margin: 0px;
@@ -227,6 +227,7 @@ p{
     text-align: center;
     background-color: rgb(245, 250, 215);
     font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
 }
 
 p#about{

@@ -128,8 +128,8 @@ $(document).ready(function () {
     J'espère me trouver en travaillant pour une entreprise qui partage mes valeurs en paix, le traitement respecteux aux animaux, et préserver le climat habitable de notre monde.
     <br/>
     <br/>
-   <a id="resume" target="_blank" href="/POST-BOOTCAMP/new_site/resume_web.pdf">Cliquez ici</a></p>`)
-      $(`#resume`).replaceWith('<p id="resume">Pour voir mon CV, <a id="resume" href="resume.pdf" target="_blank"><u>cliquer ici</u></a>.</p>')
+   <a id="resume" target="_blank" href="resume_web.pdf">Cliquez ici</a></p>`)
+      $(`#resume`).replaceWith('<p id="resume">Pour voir mon CV, <a id="resume" href="resume_web.pdf" target="_blank"><u>cliquer ici</u></a>.</p>')
       $(`#terminal`).text("Des jeux en Terminale")
     }
   })
@@ -186,9 +186,8 @@ original duration of the show, and any remarkable/historically significant notes
 </div>`)
     $(`#projets`).text(`Projects`)
     $(`#skill`).text(`Skills`)
-    $(`#welcome`).text(`Welcome to my website :)`)
     $(`#experience`).text(`Experience`)
-    $(`#resume`).replaceWith('<p id="resume">To view my resume, <a href="resume.pdf" target="_blank"><u>click here</u></a>.</p>')
+    $(`#resume`).replaceWith('<p id="resume">To view my resume, <a href="resume_web.pdf" target="_blank"><u>click here</u></a>.</p>')
   })
 
 
