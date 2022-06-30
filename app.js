@@ -125,7 +125,7 @@ $(document).ready(function () {
     Avant d'être devenu un ingénieur-conseil, je me specialisais aux beaux-arts et le français-- ceux les deux continuent me soutenier comme je les intègre à ma vie du coding. 
     <br/>
     <br/>
-    J'espère me trouver en travaillant pour une entreprise qui partage mes valeurs en paix, le traitement respecteux aux animaux, et préserver le climat habitable de notre monde.
+    J'espère me trouver en travaillant pour une entreprise qui partage mes valeurs en paix, les droits-humains, le traitement respecteux aux animaux, et préserver le climat habitable de notre monde.
     <br/>
     <br/>
    <a id="resume" target="_blank" href="resume_web.pdf">Cliquez ici</a></p>`)
@@ -144,7 +144,7 @@ $(document).ready(function () {
 Prior to becoming a software engineer, my background was in Art and French which has been fun to incorporate into my coding life. 
 <br/>
 <br/>
-That said, I hope to lend my skills and offer creative solutions for companies that share my values in peace, treating animals with respect, and preserving our planet's habitable climate.
+That said, I hope to lend my skills and offer creative solutions for companies that share my values in peace, human rights, treating animals with respect, and preserving our planet's habitable climate.
 <br/>
 <br/>
 <a id="resume" target="_blank" href="/POST-BOOTCAMP/new_site/resume_web.pdf">Click here</a></p>`);
