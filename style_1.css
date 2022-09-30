@@ -12,11 +12,17 @@ html{
     text-decoration: none;
     color: white;
   }
-  
+
   #links a:visited {
       color: white;
     text-decoration: none;
   }
+
+  #links a:hover {
+    text-decoration: solid;
+    color: rgb(142, 85, 170);
+  }
+  
 
 
 a:link{
