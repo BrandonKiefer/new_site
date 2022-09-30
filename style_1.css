@@ -55,6 +55,13 @@ nav{
     flex-direction: column;
 }
 
+span{
+    display: block;
+ text-align: center;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: larger;
+}
+
 ul#links {
     display: flex;
     justify-content: space-around;

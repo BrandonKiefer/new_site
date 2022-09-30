@@ -138,13 +138,13 @@ $(document).ready(function () {
   const EN = document.getElementsByClassName("en")
   $(EN).click(function () {
     french = false;
-    $(`#about`).replaceWith(`<p id="about">I'm a software engineer with experience in Javascript, React, HTML5, jQuery, CSS, and backend frameworks using Python, Django, Express, REST APIs, MongoDB, and SQL. 
+    $(`#about`).replaceWith(`<p id="about">I'm a software engineer and web developer living in the San Francisco Bay Area. I love to create things, inspire others, and to be inspired myself. 
 <br/>
 <br/>
-Prior to becoming a software engineer, my background was in Art and French which has been fun to incorporate into my coding life. 
+Having said that, it shouldn't come as a suprise that art has been a big part of my life--- all the way back to my childhood in Alabama. Prior to becoming a software engineer, my background was in Art and French which has been fun to incorporate into my coding life. 
 <br/>
 <br/>
-That said, I hope to lend my skills and offer creative solutions for companies that share my values in peace, human rights, treating animals with respect, and preserving our planet's habitable climate.
+When I'm not making things,  I enjoy riding bikes and on weekends I've been known to volunteer for animal shelters like Berkeley Humane and PAWS in Philadelphia. That said, I hope to lend my skills and offer solutions for companies that share my values in peace, human rights, treating animals with respect, and preserving our planet's habitable climate.
 <br/>
 <br/>
 <a id="resume" target="_blank" href="/POST-BOOTCAMP/new_site/resume_web.pdf">Click here</a></p>`);
