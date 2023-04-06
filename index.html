@@ -19,140 +19,32 @@
     </header>
 <body>
     <main>
+<!-- Carousel container-->
+<div class="carousel">
+ <!-- Carousel images -->
+ <img src="./public/images/image1.jpg" alt="Image 1">
+ <img src="./public/images/image2.jpg" alt="Image 2">
+ <img src="./public/images/image3.jpg" alt="Image 3">
 
-<div class="about">
-    <h1 id="title">Brandon Kiefer: Full-Stack Developer</h1>
-        <p id="about">I'm a software engineer and web developer living in the San Francisco Bay Area. I love to create things, inspire others, and to be inspired myself.
-            <br/>
-            <br/>
-            Having said that, it shouldn't come as a suprise that art has been a big part of my life--- all the way back to my childhood in Alabama. Prior to becoming a software engineer, my background was in Art and French which has been fun to incorporate into my coding life.  
-            <br/>
-            <br/>
-            When I'm not making things,  I enjoy riding bikes and on weekends I've been known to volunteer for animal shelters like Berkeley Humane and PAWS in Philadelphia. That said, I hope to lend my skills and offer solutions for companies that share my values in peace, human rights, treating animals with respect, and preserving our planet's habitable climate.
-            <br/>
-            <br/>
-            <span id="resume">To view my resume,  <a href="resume_web.pdf" target="_blank"><u>click here</u></a>.</span></p>
-            </div>
-        <h1 id="skills">Coding Skills</h1>
-<div class="skills">
-    <ul class="languages">
-        <h3>Languages</h3>
-        <div id="languages">
-        <li>HTML & HTML5</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </div>
-        </ul>
-        <ul class="libraries">
-        <h3>Libraries and Frameworks</h3>
-        <div id="libraries">
-        <li>React.js</li>
-        <li>Express.js</li>
-        <li>Node.js</li>
-        <li>JQuery</li>
-        <li>Django</li>
-        <li>EJS</li>
-        <li>Mongoose</li>
-    </div>
-        </ul>
-        <ul class="database">
-        <h3>Database</h3>
-        <div id="database">
-        <li>MongoDB</li>
-        <li>PostgreSQL</li>
-    </div>
-    </ul>
-    <ul class="other">
-        <h3>Other</h3>
-        <div id="other">
-        <li>UX/UI Design</li>
-        <li>RESTful APIs</li>
-        <li>Github</li>
-        <li>JSON</li>
-        <li>Docker</li>
-        <li>Git</li>
-    </div>
-    </ul>
-    </div>
-      
-    <div id="projects" class="projects reveal">
-      
-<h1>Projects</h1>
+ <!-- Carousel left arrow -->
+<div class="carousel-arrow left-arrow" tabindex="0">&#10094;</div>
+<!-- Carousel right arrow -->
+<div class="carousel-arrow right-arrow" tabindex="0">&#10095;</div>
 
-<a id="myBikeDB" href="https://my-bike-database.onrender.com/" target="_blank"><img id="logo" src="public/images/logos/myBikeDatabase.png"></a><br/>
-</div>
-<div id="myBikeDatabase">
-<div class="project-images reveal-side-r">
-    <a target="_blank" href="https://my-bike-database.onrender.com/">
-<img id="myBikeDatabase" src="public\images\myBikeDatabase.png">
-</a>
-<a target="_blank" href="https://my-bike-database.onrender.com//">
-<img id="myBikeDatabase" src="public\images\myBikeDatabase2.png">
-</a>
-</div>
-<p class="myBikeDatabase reveal">MyBikeDatabase is a full-stack MERN application that allows users to keep track of the metrics for their bicycles' components using a very thorough and detailed bike schema.
-    It can be used for personal record-keeping to ensure compatibility for replacing and ordering new parts. It also has commercial application for client/inventory management.Like any full-CRUD application, submitted bicycles can be edited and deleted.
-    Some of the coding technologies used include:
-    <br/>
-    <br/>
-        • MongoDB</br>
-        • React</br>
-        • Express</br>
-        • Node</br>
-        • Javascript</br>
-    <br/>
-    Currently hosted on Heroku, updates and plans for future deployment include a Registration and Login component for users.
-</p>
+ 
+ <!-- Carousel dot indicators -->
+ <div class="carousel-dots">
+   <span class="dot active"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+ </div>
 </div>
 
-<div id="hells_spoon">
-    <a target="_blank" href="https://hells-spoon.onrender.com/">
-<img class="logo reveal" src="public/images/logos/Hells_spoon.png">
-</a>
-<div class="project-images reveal-side-l">
-    <a target="_blank" href="https://hells-spoon.onrender.com/">
-<img id="myBikeDatabase" src="public\images\Hells_Spoon_index.png">
-</a>
-<a target="_blank" href="https://hells-spoon.onrender.com/">
-<img id="myBikeDatabase" src="public\images\Hells_Spoon.png">
-</a>
-</div>
-<p class="Hells_Spoon reveal">Hell's Spoon was developed in a team project and is a full-stack social media recipe-sharing application built using:</br>
-    <br/>
-    • MongoDB<br/>
-    • Express<br/>
-    • EJS<br/>
-    • Node<br/> 
-<br/>
-    Inspired from the title of one of Chef Gordon Ramsay's most popular television shows, users are able to register their own accounts to post and share their favorite recipes. Thanks to a few pieces of middleware that have been
-    integrated into this application, registered users can also upload photos of their own favorite homemade dishes!
-</p>
-</div>
-
-<div class="WRESTL">
-    <a target="_blank" href="https://wrestl-api-frontend.herokuapp.com/">
-    <img class="logo reveal" src="public/images/logos/WRESTL_API.png">
-</a>
-<div class="project-images reveal-side-r">
-    <a target="_blank" href="public\images\wrestl_api.jpg">
-<img id="wrestl" src="public\images\wrestl_api.jpg">
-</a>
-</div>
-<p class="WRESTL reveal">A play on the word RESTful API, this React application serves information about televised professional wrestling events in history. The backend and frontend are powered using the following coding languages and libraries:<br/>
-    <br/>
-    • Python<br/>
-    • Django<br/>
-    • React<br/>
-    <br/>
+<div class="geolocation">
     
-    This API that details events by promotion (wrestling organization), event year, # of matches, average match 
-    rating (based on original records from the Wrestling Observer Newsletter), best match (either based on the Wrestling Observer or my own opinion), 
-    original duration of the show, and any remarkable/historically significant notes from the event. </p>
 </div>
-<div class="buffer"></div>
-</div>
-</ul>
+
+
 <footer>
     <ul id="links">
         <li><a id="links" href="https://www.linkedin.com/in/brandonkiefer-se/" target="_blank">LinkedIn</a></li>
