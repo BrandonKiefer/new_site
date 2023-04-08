@@ -200,3 +200,36 @@ display: flex;
   .active, .dot:hover {
     background-color: #717171;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Contact Form */
+  .form-container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
