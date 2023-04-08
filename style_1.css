@@ -1,99 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans&family=Roboto:wght@300&display=swap');
 
-html{
-    margin: 0px;
-   
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
+html {
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
-#links a:link {
-    text-decoration: none;
-    color: white;
-  }
+.links a:link {
+  text-decoration: none;
+  color: white;
+}
 
-  #links a:visited {
-      color: white;
-    text-decoration: none;
-  }
+.links a:visited {
+  color: white;
+  text-decoration: none;
+}
 
-  #links a:hover {
-    text-decoration: solid;
-    color: rgb(142, 85, 170);
-  }
-  
+.links a:hover {
+  text-decoration: solid;
+  color: rgb(142, 85, 170);
+}
 
+a:link {
+  color: black;
+  text-decoration: underline;
+}
 
-a:link{
-    color: black;
-    text-decoration: underline;
-} 
-
-a:visited{
-    color: black;
-    text-decoration: underline;
-} 
-
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
 
 header {
-    color: white;
-    top: 0;
-    left: 0;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  color: white;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
-
 
 div#language {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15px;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
+nav {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-ul#links {
-    display: flex;
-    justify-content: space-around;
+.links {
+  display: flex;
+  justify-content: space-around;
 }
 
-footer{
-    color: white;
-    display: flex;
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    flex-direction: column;
-    bottom: 0;
-    left: 0;
-    height: 5%;
-    z-index: 1;
+footer {
+  color: white;
+  display: flex;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  height: 5%;
+  z-index: 1;
 }
 
-
-
-li{
-    list-style-type: none;
-    font-family: 'Roboto', sans-serif;
+li {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
-
+}
 
 .carousel {
     margin: auto;
@@ -202,6 +192,12 @@ display: flex;
   }
 
 
+  /*Geolocation message */
+  div.geolocation{
+  display: flex;
+  }
+/*About section */
+
 
 
 
@@ -216,7 +212,9 @@ display: flex;
   /* Contact Form */
   .form-container {
     max-width: 300px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 59px;
     padding: 20px;
     border: 1px solid #ccc;
   }
@@ -233,3 +231,69 @@ display: flex;
     border: none;
     cursor: pointer;
   }
+
+
+
+
+
+  /* Mobile responsive media queries */
+
+/* Hamburger menu and mobile styles */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .links.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+    background-color: #333;
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    padding: 10px;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #555;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .links {
+    display: flex;
+  }
+}

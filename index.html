@@ -12,9 +12,13 @@
         <a href="#" class="en"><img src="public\images\us_small.png"></a> <a href="#" class="fr"><img src="public\images\fr_small.png"></a>
     </div>
     <nav>
-        <ul id="links">
-            <li><a href=index.html id="links">Home</a></li> <li><a href="#projects" id="links">Projects</a></li> <li><a target="_blank" href="resume_web.pdf" id="links">Experience</a></li> <li><a href=#skills id="links">Skills</a></li>
-        </ul>
+        <button class="hamburger">&#9776;</button>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a target="_blank" href="resume_web.pdf">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
         </nav>
     </header>
 <body>
@@ -42,9 +46,24 @@
 
 <div class="geolocation">
 <p id="location-message"></p>
+</div>
+
+<div class="intro-banner">
+<div id="about">
+    <p>Hi there! I am a full-stack software developer and designer living in the San Francisco Bay Area. I am constantly learning new things and have created some really cool applications that I'm proud of that feature a server-side client handling calls to APIs and databases as well as a responsive UI on the frontend.</br>
+    Some of the technologies and languages I've learned include HTML5, JavaScript, CSS3, React.js, PHP, Java, Python, SQL, noSQL, and more! Aside from coding, I also enjoy video production and photo-editing. Thanks for taking the time to check out my website and get in touch with me if you like what you see!</p>
+</div>
+</div>
+
+<div class="projects">
+
+</div>
 
 
+
+<!-- Contact Form -->
 <div class="form-container">
+    <h2>Contact Me</h2>
     <form id ="contactForm" action="javascript:void(0);" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -59,7 +78,6 @@
     </form>
   </div>
 </div>
-
 
 <footer>
     <ul id="links">
