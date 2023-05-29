@@ -12,12 +12,13 @@
         <a href="#" class="en"><img src="public\images\us_small.png"></a> <a href="#" class="fr"><img src="public\images\fr_small.png"></a>
     </div>
     <nav>
-        <button class="hamburger">&#9776;</button>
+        <button class="hamburger hamburger-animation">&#9776;</button>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a target="_blank" href="resume_web.pdf">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
     </header>
@@ -25,39 +26,166 @@
     <main>
 <!-- Carousel container-->
 <div class="carousel">
- <!-- Carousel images -->
- <img src="./public/images/image1.jpg" alt="Image 1">
- <img src="./public/images/image2.jpg" alt="Image 2">
- <img src="./public/images/image3.jpg" alt="Image 3">
-
- <!-- Carousel left arrow -->
-<div class="carousel-arrow left-arrow" tabindex="0">&#10094;</div>
-<!-- Carousel right arrow -->
-<div class="carousel-arrow right-arrow" tabindex="0">&#10095;</div>
-
- 
- <!-- Carousel dot indicators -->
- <div class="carousel-dots">
-   <span class="dot active"></span>
-   <span class="dot"></span>
-   <span class="dot"></span>
- </div>
-</div>
+    <!-- Carousel images -->
+    <div data-anchor="#projects">
+      <img src="./public/images/image1.jpg" alt="Image 1">
+    </div>
+    <div data-anchor="/games/TrailsJS/trails.html" data-target="_blank">
+      <img src="./public/images/Games.gif" alt="Image 2">
+    </div>
+    <img src="./public/images/w00fus_ad.jpg" alt="Image 3">
+  
+    <!-- Carousel left arrow -->
+    <div class="carousel-arrow left-arrow" tabindex="0">&#10094;</div>
+    <!-- Carousel right arrow -->
+    <div class="carousel-arrow right-arrow" tabindex="0">&#10095;</div>
+  
+    <!-- Carousel dot indicators -->
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
 
 <div class="geolocation">
 <p id="location-message"></p>
 </div>
 
-<div class="intro-banner">
+<div class="intro">
 <div id="about">
-    <p>Hi there! I am a full-stack software developer and designer living in the San Francisco Bay Area. I am constantly learning new things and have created some really cool applications that I'm proud of that feature a server-side client handling calls to APIs and databases as well as a responsive UI on the frontend.</br>
-    Some of the technologies and languages I've learned include HTML5, JavaScript, CSS3, React.js, PHP, Java, Python, SQL, noSQL, and more! Aside from coding, I also enjoy video production and photo-editing. Thanks for taking the time to check out my website and get in touch with me if you like what you see!</p>
+    <p>Hi! I am a full-stack software developer and designer living in the San Francisco Bay Area. I am constantly learning new things and have created some really cool applications that I'm proud of featuring server-side clients that handle API calls along with front-end UIs that are mobile-responsive.</p>
+    <p>Some of the technologies and languages I've learned include HTML5, JavaScript, CSS3, React.js, PHP, Java, Python, SQL, noSQL, Django, and more! Aside from coding, I also enjoy video production and photo-editing. Thanks for taking the time to check out my website and feel free to reach out to me if you like what you see!</p>
 </div>
 </div>
+
+
+<h1 id="skills">Skills</h1>
+<div class="skills">
+    <ul class="languages reveal">
+        <h3>Languages</h3>
+        <div id="languages">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+    </div>
+        </ul>
+        <ul class="libraries reveal">
+        <h3>Libraries and Frameworks</h3>
+        <div id="libraries">
+        <li><a target="_blank" href="https://react.dev/">React.js</a></li>
+        <li><a target="_blank" href="https://expressjs.com/">Express.js</a></li>
+        <li><a target="_blank" href="https://nodejs.org/en/about">Node.js</a></li>
+        <li><a target="_blank" href="https://jquery.com/">JQuery</a></li>
+        <li><a target="_blank" href="https://www.djangoproject.com/">Django</a></li>
+        <li><a target="_blank" href="https://www.npmjs.com/package/ejs">EJS</a></li>
+        <li><a target="_blank" href="https://www.npmjs.com/package/mongoose">Mongoose</a></li>
+    </div>
+        </ul>
+        <ul class="database reveal">
+        <h3>Database</h3>
+        <div id="database">
+        <li><a target="_blank" href="https://www.mongodb.com/">MongoDB</a></li>
+        <li><a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a></li>
+        <li><a target="_blank" href="https://www.mysql.com/">MySQL</a></li>
+        <li><a target="_blank" href="https://httpd.apache.org/ABOUT_APACHE.html">Apache</a></li>
+    </div>
+    </ul>
+    <ul class="other reveal">
+        <h3>Other</h3>
+        <div id="other">
+        <li>UX/UI Design</li>
+        <li>RESTful APIs</li>
+        <li><a target="_blank" href="https://git-scm.com/">Version Control</a></li>
+        <li>JSON</li>
+        <li>Docker</li>
+       
+    </div>
+    </ul>
+    </div>
+
+
+
+<span id="projects"></span>
 
 <div class="projects">
-
+<h2>Projects</h2>
+<img src="public/images/logos/myBikeDatabase.png">
+ 
+<div class="MBD">
+    <span id="project">
+        <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/peDEnXDP5zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+    <aside>
+<p>MyBikeDatabase is my capstone project and was an idea that I had before I even started coding. As a DIY cyclist, I have assembled and repaired a variety of single-speed biycles many with entirely individual custom-ordered parts.
+    A problem that I had for the longest time was actually keeping track of the specs for all of my bikes' various components-- for which there are SO many. If you're familiar with bikes at all, you may already know the dread of
+    having to disassemble parts of your bike to check something like the length of a spoke or the diameter of your steering tube if you're looking to make an upgrade or a repair. The last thing you want is waste your time and money purchasing an incompatible part.
+    MyBikeDatabase allows users of any background to begin recording the specs of their bikes, for as long as they have them, streamlining all futures repairs and upgrades!
+</p>
+</span>
+<a class="github" target="_blank" href="https://github.com/nekomask/project5_frontend"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://my-bike-database.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+    </aside>
 </div>
+<img  id="atmos" src="public/images/logos/atmos2.png">
+    <div class="Atmos">
+        <span id="project">
+        <aside>
+            <p>ATMOS was a Hackathon project that I helped work on in 2022 in collaboration with a team of UX Designers and other software engineers. It is a full-stack Air Quality measuring React application that fetches data for the air quality index for cities in every state across the U.S.</p>
+        </span>
+            <a class="github" target="_blank" href="https://github.com/nekomask/atmos_backend_refactor"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://atmos-frontend.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+        </aside>
+        </div>
+        <h3>Chat AI: Woofus</h3>
+        <img src="public/images/rufus_nerd.png">
+        <div class="AI">
+            <span id="project">
+            <aside>
+                <p>Have fun and learn more about me by interacting with my own personal AI website assistant! Most of the things he says are true! This little application uses an API key for OpenAI's ChatGPT and currently running on v3.5.</p>
+            </span>
+                <a class="github" target="_blank" href="https://github.com/nekomask/GPT_Client"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://atmos-frontend.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+            </aside>
+        </div>
+        <img  id="atmos" src="public/images/logos/Hells_spoon.png">
+        <div class="hells_spoon">
+            <span id="project">
+            <aside>
+                <p>This was a group project that I worked on with a few other developers to build a full-stack app that allows users to login and post/share their favorite recipes. This app uses Embedded JavaScript templates (EJS) to generate the markup language on the frontend. The name is inspired by one of chef Gordon Ramsay's popular cooking contest reality-shows. Feel free to check it out!</p>
+            </span>
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://hells-spoon.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+            </aside>
+        </div>
+    </div>
+
+
+    <div class="games">
+        <h2>Games</h2>
+        <div class="game" id="snake">
+            <div class="game-content">
+                <h3>SNAKE</h3>
+                <p>If you grew up in the 90s, you've probably played this game before-- maybe on one of your old flip phones. Remember those? Well now you can relive those times in your browser! You start off as a baby snake and go around eating apples to grow and improve your score but be careful not to eat your own tail!</p>
+            </div>
+            <div class="links">
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a>
+                <a class="deployed-site" target="_blank" href="games/SnakeJS/snake.html"><img class="globe" src="./public/images/globe.png"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="game" id="trails">
+            <div class="game-content">
+                <h3>TRAILS</h3>
+                <p>This is based on the classic game that came with Windows 3.x operating systems. While similar to snake, the object of the game is to battle your computer-opponent in a competetion for space as you try to force them to collide into your trail, the edge of the screen, or their own trail. Surprisingly, I couldn't find a playable version online so I made my own that is playable in the browser! I think it's still pretty addictive so I hope you enjoy!</p>
+            </div>
+            <div class="links">
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a>
+                <a class="deployed-site" target="_blank" href="games/TrailsJS/trails.html"><img class="globe" src="./public/images/globe.png"></a>
+            </div>
+        </div>
+    </div>
+    
+    
 
 
 

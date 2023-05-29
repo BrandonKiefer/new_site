@@ -41,7 +41,7 @@ header {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 div#language {
@@ -61,18 +61,6 @@ nav {
   justify-content: space-around;
 }
 
-footer {
-  color: white;
-  display: flex;
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  flex-direction: column;
-  bottom: 0;
-  left: 0;
-  height: 5%;
-  z-index: 1;
-}
 
 li {
   list-style-type: none;
@@ -85,158 +73,392 @@ main {
   align-items: center;
 }
 
-.carousel {
-    margin: auto;
-    margin-top: 100px;
-    
-display: flex;
-    position: relative;
-    border: solid 2px black;
-    width: 500px;
-    height: 500px; /* Set the height to 50% of the viewport height (or any desired height) */
-    background-color: #000; /* Add a background color to the carousel */
-    overflow: hidden; /* Hide any overflowing content */
-  }
+/*CAROUSEL */
 
-  /* Style for carousel arrows */
+.carousel {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+  border: solid 2px black;
+  width: 500px;
+  height: 500px;
+  /* Set the height to 50% of the viewport height (or any desired height) */
+  background-color: #000;
+  /* Add a background color to the carousel */
+  overflow: hidden;
+  /* Hide any overflowing content */
+}
+
+.carousel div[data-anchor] {
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.carousel div[data-anchor]:hover {
+  border: 2px solid rgb(142, 85, 170);
+}
+
+
+/* Style for carousel arrows */
 .carousel-arrow {
-    position: absolute;
-    top: 50%;
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 0 0 3px #000;
-    z-index: 10; /* Ensure arrows are always on top of the images */
-    cursor: pointer; /* Change cursor to pointer when hovering over the arrows */
-    user-select: none;
-    transform: translateY(-50%);
-  }
-  
-  /* Position left arrow on the left side */
-  .left-arrow {
-    left: 10px;
-  }
-  
-  /* Position right arrow on the right side */
-  .right-arrow {
-    right: 10px;
-  }
-  
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  z-index: 1;
+  /* Ensure arrows are always on top of the images */
+  cursor: pointer;
+  /* Change cursor to pointer when hovering over the arrows */
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+/* Position left arrow on the left side */
+.left-arrow {
+  left: 10px;
+}
+
+/* Position right arrow on the right side */
+.right-arrow {
+  right: 10px;
+}
+
 
 
 /*Animations for web-browsers */
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
 
-  }
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
+}
 
-  /*Animations load from X-axis */
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 
- /* Hide all images except for the first one,
+/*Animations load from X-axis */
+
+/* Hide all images except for the first one,
      and position them absolutely so they can be layered on top of each other */
-     .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-    
-    .carousel img.active {
-      opacity: 1;
-    }
-    
-  
-  /* Show the first image */
-  .carousel img:first-child {
-    display: block;
-  }
-  
-  
-  /* Style for carousel dots container */
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    position: absolute; /* Position dots container absolutely */
-    bottom: 10px; /* Position dots container at the bottom of the carousel */
-    left: 50%; /* Center dots container horizontally */
-    transform: translateX(-50%); /* Ensure dots container is perfectly centered */
-    z-index: 10; /* Ensure dots are always on top of the images */
-  }
-  
-  /* Style for individual dots */
-  .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 10px;
-    border-radius: 50%;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    cursor: pointer; /* Change cursor to pointer when hovering over the dots */
-  }
-  
-  /* Style for active dot and dot hover state */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+  display: block;
+}
 
 
-  /*Geolocation message */
-  div.geolocation{
+
+/* Show the first image */
+.carousel img:first-child {
+  display: block;
+}
+
+
+/* Style for carousel dots container */
+.carousel-dots {
   display: flex;
-  }
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  /* Position dots container absolutely */
+  bottom: 10px;
+  /* Position dots container at the bottom of the carousel */
+  left: 50%;
+  /* Center dots container horizontally */
+  transform: translateX(-50%);
+  /* Ensure dots container is perfectly centered */
+  z-index: 1;
+  /* Ensure dots are always on top of the images */
+}
+
+/* Style for individual dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  /* Change cursor to pointer when hovering over the dots */
+}
+
+/* Style for active dot and dot hover state */
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+/*Geolocation message */
+div.geolocation {
+  display: flex;
+  color: blue;
+}
+
 /*About section */
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.intro a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.intro a:hover {
+  background-color: #ffffff;
+  color: #2a2a2a;
+}
+
+
+/*-- skills --*/
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+  font-size: 1rem;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 300px;
+}
+
+.skills h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.skills li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+.skills a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.skills a:hover {
+  text-decoration: underline;
+}
 
 
 
+/*GAMES */
+
+div.games {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* add space between games */
+  width: 80%; /* adjust as needed */
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center; /* align the icons horizontally */
+  gap: 10px; /* add space between icons */
+}
+
+
+/*Projects */
+div.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  max-width: 800px;
+  width: 90%; /* Adjust width to be more responsive */
+}
+
+div.MBD, div.Atmos, div.AI, div.hells_spoon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px; /* add spacing between project entries */
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px; /* add some padding around the content */
+  background-color: #f9f9f9; /* add a light background color for contrast */
+}
+
+span#project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+aside {
+  text-align: center; /* center the text */
+}
+
+/*images */
+img.globe{
+  height: 20px;
+  width: 20px;
+}
+
+img#atmos{
+  height: 100px;
+  margin-bottom: 20px; /* add some spacing */
+}
+
+/*Youtube video */
+iframe#youtube {
+  width: 100%; /* make the video responsive */
+  max-width: 560px; /* set a max-width to keep the video from getting too large */
+  height: 315px;
+  margin-bottom: 20px; /* add some spacing */
+  border: 5px solid purple; /* reduce the border size for a cleaner look */
+}
 
 
 
+/* Contact Form */
+.form-container {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 59px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/*FOOTER */
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2px; /* adjust as needed */
+  z-index: 2;
+}
+
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* adds space between items */
+}
+
+footer ul li {
+  text-align: center;
+}
 
 
 
-
-
-  /* Contact Form */
-  .form-container {
-    max-width: 300px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 59px;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-  }
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-
-
-
-
-  /* Mobile responsive media queries */
 
 /* Hamburger menu and mobile styles */
 .hamburger {
@@ -245,12 +467,25 @@ display: flex;
   background: none;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hamburger.open {
+  transform: rotate(90deg);
 }
 
 .navbar {
   display: none;
+  transition: max-height 0.3s;
 }
 
+.navbar.open {
+  max-height: 200px;
+}
+
+
+
+/* Mobile responsive media queries */
 @media screen and (max-width: 768px) {
   .links {
     display: none;
@@ -297,3 +532,43 @@ display: flex;
     display: flex;
   }
 }
+
+
+/* animations */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /*Animations load from X-axis */
+
+  .reveal-side-r{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+
+  }
+  .reveal-side-r.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .reveal-side-l{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+
+  }
+  .reveal-side-l.active{
+    transform: translateX(0);
+    opacity: 1;
+  }

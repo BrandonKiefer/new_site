@@ -1,0 +1,353 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h2, h3 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #222;
+  }
+  
+  header #language {
+    display: flex;
+    gap: 10px;
+  }
+  
+  header nav .hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  header nav .links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  header nav .links li a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  header nav .links li a:hover {
+    color: #e74c3c;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  .projects {
+    margin-bottom: 2rem;
+  }
+  
+  .projects h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .projects #project {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects iframe {
+    max-width: 100%;
+  }
+  
+  .projects aside {
+    flex: 1;
+  }
+  
+  .projects a {
+    display: inline-block;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+  }
+  
+  .games {
+    margin-bottom: 2rem;
+  }
+  
+  /* Contact Form */
+  .form-container {
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #e74c3c;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    header nav .hamburger {
+      display: block;
+    }
+  
+    header nav .links {
+      display: none;
+    }
+  }
+  
+  /*CAROUSEL */
+
+.carousel {
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    border: solid 2px black;
+    width: 500px;
+    height: 500px;
+    /* Set the height to 50% of the viewport height (or any desired height) */
+    background-color: #000;
+    /* Add a background color to the carousel */
+    overflow: hidden;
+    /* Hide any overflowing content */
+  }
+  
+  .carousel div[data-anchor] {
+    cursor: pointer;
+    transition: border 0.3s;
+  }
+  
+  .carousel div[data-anchor]:hover {
+    border: 2px solid rgb(142, 85, 170);
+  }
+  
+  
+  /* Style for carousel arrows */
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    z-index: 1;
+    /* Ensure arrows are always on top of the images */
+    cursor: pointer;
+    /* Change cursor to pointer when hovering over the arrows */
+    user-select: none;
+    transform: translateY(-50%);
+  }
+  
+  /* Position left arrow on the left side */
+  .left-arrow {
+    left: 10px;
+  }
+  
+  /* Position right arrow on the right side */
+  .right-arrow {
+    right: 10px;
+  }
+  
+  
+  
+  /*Animations for web-browsers */
+  
+  .reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  
+  }
+  
+  .reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /*Animations load from X-axis */
+  
+  /* Hide all images except for the first one,
+       and position them absolutely so they can be layered on top of each other */
+  .carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel img.active {
+    opacity: 1;
+    display: block;
+  }
+  
+  
+  
+  /* Show the first image */
+  .carousel img:first-child {
+    display: block;
+  }
+  
+  
+  /* Style for carousel dots container */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: absolute;
+    /* Position dots container absolutely */
+    bottom: 10px;
+    /* Position dots container at the bottom of the carousel */
+    left: 50%;
+    /* Center dots container horizontally */
+    transform: translateX(-50%);
+    /* Ensure dots container is perfectly centered */
+    z-index: 1;
+    /* Ensure dots are always on top of the images */
+  }
+  
+  /* Style for individual dots */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    /* Change cursor to pointer when hovering over the dots */
+  }
+  
+  /* Style for active dot and dot hover state */
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
+  
+
+/*Geolocation message */
+div.geolocation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p#location-message{
+    width: 700px;
+    color: blue;
+    font-weight: 400;
+}
+  
+  /*About section */
+  
+  /*GAMES */
+  div.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  span#games {
+    display: flex;
+  }
+  
+  
+  /*Projects */
+  div.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 755px;
+  }
+  
+  div.MBD {
+    display: flex;
+    border: 15px solid black;
+  }
+  
+  div.project-name {
+    display: flex;
+  }
+  
+  span#project {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 50px;
+  }
+  
+  div.Atmos {
+    display: flex;
+  }
+  
