@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $.get('/api/geolocation', function (response) {
+    $.get('https://brandonkiefer-backend.onrender.com/api/geolocation', function (response) {
         let state = response.state_prov;
         let city = response.city;
         let timezone = response.timezone;
