@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_1.css">
+    <link rel="stylesheet" href="blog.css">
     <title>Brandon Kiefer: Software Engineer</title>
 </head>
 <header>
@@ -12,34 +12,39 @@
         <a href="#" class="en"><img src="public\images\us_small.png"></a> <a href="#" class="fr"><img src="public\images\fr_small.png"></a>
     </div>
     <nav>
-        <ul id="links">
-            <li><a href=index.html id="links">Home</a></li> <li><a href="#projects" id="links">Projects</a></li> <li><a target="_blank" href="resume_web.pdf" id="links">Experience</a></li> <li><a href=#skills id="links">Skills</a></li>
-        </ul>
+        <button class="hamburger hamburger-animation">&#9776;</button>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a target="_blank" href="resume_web.pdf">Experience</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
         </nav>
     </header>
 <body>
     <main>
+        <div class="blog">
 
-<div class="about">
-    <h1 id="title">Brandon Kiefer: Full-Stack Developer</h1>
-    <p id="about"> 
-        <date><u>April 18th, 2023</u></date>
-        <h3>What's taken so long?</h3>
-        <br/>
-        So last year after completing my bootcamp-- financial pressure forced me to return to my previous position as treatment coordinator for a busy dental office in downtown San Francisco. It is a fast-paced and highly-stressful job-- but I have a lot of experience doing it so at least my skills are in high-demand in that industry and my track record is good enough that my old employer had kept in touch and reached out to me first to resume my old position. 
-        <br/>
-        After returning full-time in September, I continued coding on nights and weekends-- pretty obsessively as a matter of fact. I kept working on coding challenges here and there but there were also days after I'd get home where I was too wiped out to do anything but sleep-- sometimes without even eating dinner. But I kept pushing myself to learn more and more. I had a plan to use my accrued PTO that was still left on my payroll account from before I had left my job to do the bootcamp-- and I planned to take a Friday off every couple of weeks to focus on coding. Unfortunately, I never got to follow through with that plan.
-    </br>
-    The Thursday before Thanksgiving, I was nearing the end of another busy day at the office. I was looking forward to a 3-day weekend as I had scheduled to take the following day off to focus on coding at home. Just as soon as my last coworker left the office and I had clocked out-- my phone rang with the familiar area code from my hometown in Mobile, AL. I didn't think much of it at first because I get spam calls all the time from that same area code. However, about 20 seconds later-- my phone rings again from the same number and it was kinda late for spam callers so I picked it up. It was my mom's neighbor-- I didn't even know she had my number and she's never called me before so I was already alarmed. I asked if she was okay and I was told that they hadn't seen my mom all week-- her garbage wasn't taken out that day and her other neighbor became concerned and called the police to do a wellness check. They asked if I knew of a key to get in the house; I haven't lived there in years and as far as I knew my mom didn't hide any spare keys. I told them to do whatever it takes to get into the house. After getting off the phone with her neighbor, I began making calls starting with my brothers, and then my uncle in Louisiana. Unfortunately, he was closest family member to her, and he lives 2 states away. I was able to get the number of my mom's best friend Terry and gave her the bad news of what was happening at our house. Needless to say, I was really scared and I don't think I'll ever forget that feeling of dread as I started to anticipate the worst. I wanted Terry to be there-- because if I had to hear the worst news then I at least wanted to hear it from her. I really couldn't imagine a worse place or time to hear this type of news.
-    </br>
-    After about 30 dreadful minutes, Terry called me back and said that the police had waited for the fire department to break down my mom's backdoor. To everyone's shock, my mom was still alive and somewhat respsonsive! It seems that she had been lying on her bedroom floor for several days after suffering from a stroke. I broke down and was just so thankful that she was still alive. Since this moment however, life hasn't been the same for her or my family. My mom's entire left side was paralyized, she experienced severe delusions and symptoms of dementia, and she was physically covered in rashes that caused severe itching for her at night. Unfortunately, as it also happened right before the holiday, there weren't any good doctors on staff at the charity hospital where the ambulance took her. It was hell. After a really bad experience with her doctor where they attempted to discharge her early-- I was able to file an appeal that delayed things just long enough to get her into a somewhat decent skilled-nursing facility (I want to mention that the original skilled-nursing facility that her case manager told us to choose had declined her after waiting for a week to hear anything-- then once I was informed they declined her then I forced to choose another facility with a deadline of 3 hours). The skilled-nursing facility I got her into was better than her hospital and at least she had her own private room but it still pained me that I would be flying back to California the next day. I ended up using all of my PTO to be with her while she recovered in the hospital and over the next few months I flew back home to check on her and ultimately cleaned out her house in preparation for it to be sold to pay for her medical treatment-- as is typical of the American Healthcare System.
-        <br/>
+  <article class="blog-post">
+                <time datetime="2023-04-18"><u>April 18th, 2023</u></time>
+                <h2>What's taken so long?</h2>
+        So last year after completing my bootcamp-- financial pressure forced me to return to my previous position as treatment coordinator for a busy dental office in downtown San Francisco. It is a fast-paced and highly-stressful job-- but I have a lot of experience doing it so at least my skills are in high-demand in that industry and my track record has been good enough that my old employer actually reached out to me first about returning to my previous position. 
+        <br/>  <br/>
+        After returning full-time in September, I continued coding on nights and weekends-- pretty obsessively as a matter of fact. I kept working on coding challenges here and there but there were also days where I'd get home and was too wiped out to do anything but sleep-- sometimes without even eating dinner. But I kept pushing myself to learn more and more. I had a plan to use my accrued PTO that was still left on my payroll account, from before I had left to do the bootcamp, to take a Friday off every couple of weeks so I could focus on coding and applying. Unfortunately, I never got to follow through with that plan.
+    </br>  <br/>
+    The Thursday before Thanksgiving, I was nearing the end of another busy day at the office. I was looking forward to a 3-day weekend as I had scheduled to take the following day off to focus on coding at home. As soon as my last coworker left the office to go home and I had clocked out-- my phone rang with the familiar area code from my hometown in Mobile, AL. I didn't think much of it at first because I get spam calls all the time from that same area code. However, about 20 seconds later-- my phone rings again from the same number and it was kind of late for spam callers so I picked it up. It was my mom's neighbor-- I didn't even know she had my number and she's never called me before so I was already alarmed. I asked if she was okay and I was told that they hadn't seen my mom all week-- her garbage wasn't taken out that day and her other neighbor became concerned and called the police to do a wellness check. They asked if I knew of a key to get in the house; I haven't lived there in years and as far as I knew my mom didn't hide any spare keys. I told them to do whatever it takes to get into the house. After getting off the phone with her neighbor, I began making calls starting with my brothers, and then my uncle in Louisiana. Unfortunately, he lives 2 states away but is the closest family member to her. I was able to get the number of my mom's best friend Terry and gave her the bad news of what was happening at our house. Needless to say, I was really scared and I don't think I'll ever forget that feeling of dread as I started to anticipate the worst. I wanted Terry to be there-- because if I had to hear the worst news then I at least wanted to hear it from her.
+    </br>  <br/>
+    After about 30 dreadful minutes, Terry called me back and said that the police had waited for the fire department to break down my mom's backdoor. To everyone's shock, my mom was still alive and somewhat respsonsive! It seems that she had been lying on her bedroom floor for several days after suffering from a stroke. I broke down and was just so thankful that she was still alive. Since this moment however, life hasn't been the same for her or my family. I bought a ticket and arrived there a couple of days later and stayed with her for 2 weeks. My mom's entire left side was paralyized, she started experiencing severe delusions and symptoms of dementia, and she was physically covered in rashes that caused severe itching for her at night. Unfortunately, as it also happened right before the holiday, there weren't any good doctors on staff at the hospital. It was hell. After a really bad experience with her doctor where they attempted to discharge her early-- I was able to file an appeal that delayed things just long enough to get her into an acceptable skilled-nursing facility (I want to mention that the original skilled-nursing facility that her case manager recommended to choose had declined her but we didn't find out for a week-- then upon being informed of her being declined I was forced to choose another skilled-nursing facility with a deadline of 3 hours). The facility I got her into was better than her hospital and at least she had her own private room but it still pained me that I would be flying back to California the next day. I ended up using all of my PTO to be with her while she recovered in the hospital and over the next few months I've flew back home to check on her and ultimately cleaned out her house in preparation for it to be sold to pay for her medical treatment-- as is typical of the American Healthcare System.
+        <br/>  <br/>
         On a positive note, my mom has made a lot of progress in her recovery and can now use her left side. She's taken a few steps and is currently learning to use a walker. My uncle took her out of the skilled-nursing facility and moved her to a similar facility in Louisiana where she is closer to family who can check on her. I resumed my coding in January and have dilligently completed an entire Udemy course learning Java as my base Object-Oriented langauge where I've also made some apps like a banking simulator where a user has a savings and checking account with a rewards program and everyone's favorite--- savings withdraw fees! From there I completed another long course in learning PHP where I learned another way to setup Registration and Login using tables in mySQL. Then in the last couple of months, I had a breakthrough on one of my capstone projects getting the login component to work using sessions, which I credit from taking a week off of work after catching COVID while traveling from visiting my mom.
-        <br/>
+        <br/>  <br/>
         So I can't really do justice how hard this has been on me and my family. This has been the most challenging experience of my life but I'm trying to rise to the occasion and keep working towards my goal. It would be such a huge blessing to get a job where I could work from home so I could spend more time with my mom while she continues to recover. I'm in the middle of redoing this website and I also recently began volunteering as a mentor for Code the Dream to help disenfranchised communities learn to code. If you're reading this, I just want to say thank you for your support. 
-        </p>
+</article>
 
-        <date><u>March 19th, 2023</u></date>
+<article class="blog-post">
+    <time datetime="2023-03-19"><u>March 19th, 2023</u></time>
+    <h3>MyBikeDatabase personal MVP has been reached</h3>
         <br/>
         After so long, I have finally implemented a working Login component that uses JSON web tokens and authentication headers for my capstone project. I have also updated the index page to only display objects (created bikes) that users have created. So when a user registers and logs into their account- they can view, create, edit, and delete their own objects.
         That's the true MVP for MyBikeDatabase when I first imagined it.
@@ -50,9 +55,11 @@
     It also took me a long time to get to this point due to having to return to work full-time just a few months after my bootcamp ended and a couple of months after that I had to put everything on hold to manage a serious family emergency back home that I am continuing to deal with today.
         <br/>
         My ultimate goal for myBikeDatabase has been achieved and I am happy I can now finally demo it for people who want to use it. I still have a little more work to do with the styling and adding a few more things-- like an email for the user model and registration component but this is a giant step for me as a developer. If you're reading this, thanks for your support!
-        </p>
-    <p id="about"> 
-        <date><u>July 21st, 2022</u></date>
+</article>
+
+<article class="blog-post">
+    <time datetime="2022-07-21"><u>July 21st, 2022</u></time>
+    <h3>Post-bootcamp update</h3>
         <br/>
        I've been getting a decent amount of interviews lately! There was almost one for every single day this week except yesterday.
        I was actually supposed to have one today as well with a Google recruiter but they had to cancel which was actually OK with me because I'm not ready for the Google process.
@@ -70,9 +77,11 @@ A friend who has been mentoring me since I started coding just sent me this book
 recursion and tomorrow I will have an interview that tests my frontend ability for a full-stack position. I hope I hear back from the JavaScript security company I interviewed with earlier this week.
 That has been my best hope so far although I'm trying not to get my hopes up. It's already been a few days since I took my coding challenge test and send the COO a thank you note. Whatever happens, happens.  
 <br/>
-    </p>
-        <p id="about"> 
-            <date><u>July 9th, 2022</u></date>
+</article>
+
+<article class="blog-post">
+    <time datetime="2022-07-09"><u>July 9th, 2022</u></time>
+    <h3>Hello World</h3>
             <br/>
             So I've decided to create a blog page on my website even though the idea seems so corny. But I think it's a good idea because it will help me stay engaged with my website,
             updating my github, and my ultimate goal--- <b>employment as a coder</b>.
@@ -90,9 +99,9 @@ That has been my best hope so far although I'm trying not to get my hopes up. It
     <br/>
     I started going through the Javascript Certification on <a href="https://www.freecodecamp.org/">FreeCodeCamp.org</a> a couple of days ago and I'm kind of hooked! It's been totally the opposite of my Leetcode experience. 
     I'm at 43% right now and hope to maybe have it completed by the end of the day on Monday. In the meantime, I'm taking notes from a Java course I'm taking on Udemy, and I'm looking to start contributing to some open-source projects on github!        
-        </p>
+</article>
             </div>
-
+        </main>
 
       
     
@@ -103,7 +112,7 @@ That has been my best hope so far although I'm trying not to get my hopes up. It
         <li><a id="links" href="https://github.com/nekomask" target="_blank">Github</a></li>
     </ul>
     </footer>
-    </main>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 

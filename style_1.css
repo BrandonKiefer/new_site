@@ -319,6 +319,7 @@ div.games {
   align-items: center;
   padding: 20px;
   font-family: 'Arial', sans-serif;
+  width: 80%;
   color: #333;
   background: #f2f2f2;
   border-radius: 10px;
@@ -330,8 +331,11 @@ div.games {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* add space between games */
-  width: 80%; /* adjust as needed */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px; 
+  width: 60%;
 }
 
 .game-content {
