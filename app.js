@@ -1,3 +1,28 @@
+// Blog
+
+/* auto-scrolling an array of strings */
+
+$(document).ready(function() {
+  console.log("Script is running!");
+  var strings = ["Thank you for guiding me through those coding challenges. Your ability to break down complex coding concepts into simple steps has made learning much easier for me. Thanks to your mentorship, I feel much more confident in tackling coding projects on my own. - Amir O.", 
+  "Very helpful and positive. Brandon Kiefer can understand  any situation and he helps  find  the right answer. - Hanna A.",
+  "Brandon is awesome, has a lot knowledge and the best part is that he knows how to explain and make understand. - Nelson P.", 
+  "Brandon has been great week to week in allowing is to work through the examples first before jumping into explaining how things work. He is also consistently providing additional resources to reference to enhance our understanding on the different topic/method we are asking questions about. - Leonardo R.",
+"Brandon has been very patient. He is very knowledgeable and explains well. - Kai Y."];
+  var currentIndex = 0;
+  
+  // Function to update the content of the div and scroll it
+  function updateDivContent() {
+    $("#scrollingDiv").html(strings[currentIndex]);
+    currentIndex = (currentIndex + 1) % strings.length;
+  }
+
+  updateDivContent();
+  
+  setInterval(updateDivContent, 5000);
+});
+
+
 // Keep track of the index of the currently displayed image
 let currentImageIndex = 0;
 
@@ -203,3 +228,5 @@ function revealsideL() {
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", revealsideR);
 window.addEventListener("scroll", revealsideL);
+
+

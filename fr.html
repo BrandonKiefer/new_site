@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Brandon Kiefer: Software Engineer</title>
+</head>
+<header>
+    <div id="language">
+        <a href="index.html" class="en"><img src="public\images\us_small.png"></a> <a href="fr.html" class="fr"><img src="public\images\fr_small.png"></a>
+    </div>
+    <nav>
+        <button class="hamburger hamburger-animation">&#9776;</button>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a target="_blank" href="resume_web.pdf">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+    </header>
+<body>
+    <main>
+<!-- Carousel container-->
+<div class="carousel">
+    <!-- Carousel images -->
+    <div data-anchor="#projects">
+      <img src="./public/images/image1.jpg" alt="Image 1">
+    </div>
+    <div data-anchor="/games/TrailsJS/trails.html" data-target="_blank">
+      <img src="./public/images/Games.gif" alt="Image 2">
+    </div>
+    <img src="./public/images/w00fus_ad.jpg" alt="Image 3">
+  
+    <!-- Carousel left arrow -->
+    <div class="carousel-arrow left-arrow" tabindex="0">&#10094;</div>
+    <!-- Carousel right arrow -->
+    <div class="carousel-arrow right-arrow" tabindex="0">&#10095;</div>
+  
+    <!-- Carousel dot indicators -->
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+<div class="geolocation">
+<p id="location-message"></p>
+</div>
+
+<div class="intro">
+<div id="about">
+    <p>Salut! Je suis un développeur et designer de logiciels full-stack vivant dans la région de la baie de San Francisco. J'apprends constamment de nouvelles choses et j'ai créé des applications vraiment cool dont je suis fier -- mettant en vedette des clients côté serveur qui gèrent les appels API ainsi que des UIs front-end qui sont responsive sur mobile.</p>
+    <p>Parmi les technologies et les langues que j'ai apprises, on trouve HTML5, JavaScript, CSS3, React.js, PHP, Java, Python, SQL, noSQL, Django, et plus encore! En dehors de la programmation, j'aime aussi la production vidéo et la retouche photo. Merci d'avoir pris le temps de consulter mon site web et n'hésitez pas à me contacter si vous aimez ce que vous voyez!</p>
+</div>
+</div>
+
+
+<h1 id="skills">Skills</h1>
+<div class="skills">
+    <ul class="languages reveal">
+        <h3>Languages</h3>
+        <div id="languages">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+    </div>
+        </ul>
+        <ul class="libraries reveal">
+        <h3>Libraries and Frameworks</h3>
+        <div id="libraries">
+        <li><a target="_blank" href="https://react.dev/">React.js</a></li>
+        <li><a target="_blank" href="https://expressjs.com/">Express.js</a></li>
+        <li><a target="_blank" href="https://nodejs.org/en/about">Node.js</a></li>
+        <li><a target="_blank" href="https://jquery.com/">JQuery</a></li>
+        <li><a target="_blank" href="https://www.djangoproject.com/">Django</a></li>
+        <li><a target="_blank" href="https://www.npmjs.com/package/ejs">EJS</a></li>
+        <li><a target="_blank" href="https://www.npmjs.com/package/mongoose">Mongoose</a></li>
+    </div>
+        </ul>
+        <ul class="database reveal">
+        <h3>Database</h3>
+        <div id="database">
+        <li><a target="_blank" href="https://www.mongodb.com/">MongoDB</a></li>
+        <li><a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a></li>
+        <li><a target="_blank" href="https://www.mysql.com/">MySQL</a></li>
+        <li><a target="_blank" href="https://httpd.apache.org/ABOUT_APACHE.html">Apache</a></li>
+    </div>
+    </ul>
+    <ul class="other reveal">
+        <h3>Other</h3>
+        <div id="other">
+        <li>UX/UI Design</li>
+        <li>RESTful APIs</li>
+        <li><a target="_blank" href="https://git-scm.com/">Version Control</a></li>
+        <li>JSON</li>
+        <li>Docker</li>
+       
+    </div>
+    </ul>
+    </div>
+
+
+
+<span id="projects"></span>
+
+<div class="projects">
+<h2>Projects</h2>
+<img src="public/images/logos/myBikeDatabase.png">
+ 
+<div class="MBD">
+    <span id="project">
+        <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/peDEnXDP5zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+    <aside>
+<p>MyBikeDatabase est mon projet de fin d'études et était une idée que j'avais avant même de commencer à coder. En tant que cycliste DIY, j'ai assemblé et réparé une variété de vélos à vitesse unique, beaucoup avec des pièces entièrement personnalisées et commandées à l'unité.
+    Un problème que j'ai eu pendant très longtemps était de garder la trace des caractéristiques de tous les différents composants de mes vélos -- pour lesquels il y en a TELLEMENT. Si vous connaissez un peu les vélos, vous connaissez peut-être déjà l'angoisse d'avoir à démonter des parties de votre vélo pour vérifier quelque chose comme la longueur d'un rayon ou le diamètre de votre tube de direction si vous cherchez à faire une amélioration ou une réparation. La dernière chose que vous voulez est de perdre votre temps et votre argent à acheter une pièce incompatible.
+    MyBikeDatabase permet aux utilisateurs de tous horizons de commencer à enregistrer les caractéristiques de leurs vélos, aussi longtemps qu'ils les possèdent, simplifiant toutes les réparations et améliorations futures!
+</p>
+</span>
+<a class="github" target="_blank" href="https://github.com/nekomask/project5_frontend"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://my-bike-database.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+    </aside>
+</div>
+<img  id="atmos" src="public/images/logos/atmos2.png">
+    <div class="Atmos">
+        <span id="project">
+        <aside>
+            <p>ATMOS était un projet de Hackathon sur lequel j'ai aidé à travailler en 2022 en collaboration avec une équipe de designers UX et d'autres ingénieurs logiciels. C'est une application React de mesure de la qualité de l'air full-stack qui récupère les données de l'indice de qualité de l'air pour les villes de tous les états des États-Unis.</p>
+        </span>
+            <a class="github" target="_blank" href="https://github.com/nekomask/atmos_backend_refactor"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://atmos-frontend.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+        </aside>
+        </div>
+        <h3>Chat AI: Woofus</h3>
+        <img src="public/images/rufus_francais.png">
+        <div class="AI">
+            <span id="project">
+            <aside>
+                <p>Amusez-vous et apprenez-en plus sur moi en interagissant avec mon propre assistant de site web personnel en IA ! La plupart des choses qu'il dit sont vraies! Cette petite application utilise une clé API pour ChatGPT d'OpenAI et fonctionne actuellement sur le dernier modèle GPT-4.</p>
+            </span>
+                <a class="github" target="_blank" href="https://github.com/nekomask/GPT_Client"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://woofus-gpt.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+            </aside>
+        </div>
+        <img  id="atmos" src="public/images/logos/Hells_spoon.png">
+        <div class="hells_spoon">
+            <span id="project">
+            <aside>
+                <p>C'était un projet de groupe sur lequel j'ai travaillé avec quelques autres développeurs pour construire une application full-stack qui permet aux utilisateurs de se connecter et de poster/partager leurs recettes préférées. Cette application utilise des templates JavaScript embarqués (EJS) pour générer le langage de balisage sur le frontend. Le nom est inspiré par l'une des émissions de télé-réalité de cuisine populaire du chef Gordon Ramsay. N'hésitez pas à y jeter un coup d'oeil!</p>
+            </span>
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a> <a class="deployed-site" target="_blank" href="https://hells-spoon.onrender.com/"><img class="globe" src="./public/images/globe.png"></a>
+            </aside>
+        </div>
+    </div>
+
+
+    <div class="games">
+        <h2>Jeux-Videos</h2>
+        <div class="game" id="snake">
+            <div class="game-content">
+                <h3>SNAKE</h3>
+                <p>Si vous avez grandi dans les années 90, vous avez probablement déjà joué à ce jeu -- probablement sur l'un de vos vieux téléphones à clapet. Vous vous souvenez de ceux-là ? Eh bien maintenant vous pouvez revivre les bons vieux jours des téléphones à clapet ici même dans votre navigateur ! Vous commencez en tant que petit serpent et vous allez autour pour manger des pommes pour grandir et améliorer votre score mais faites attention à ne pas manger votre propre queue!</p>
+            </div>
+            <div class="links">
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a>
+                <a class="deployed-site" target="_blank" href="games/SnakeJS/snake.html"><img class="globe" src="./public/images/globe.png"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="game" id="trails">
+            <div class="game-content">
+                <h3>TRAILS</h3>
+                <p>Ceci est basé sur le jeu classique qui était fourni avec les systèmes d'exploitation Windows 3.x. Bien que similaire au serpent, et en réalité plus proche de Tron, l'objectif du jeu est de combattre votre adversaire ordinateur dans une compétition pour l'espace alors que vous essayez de les forcer à se heurter à votre trace, au bord de l'écran, ou à leur propre trace. Étonnamment, je n'ai pas pu trouver une version jouable en ligne donc j'ai fait la mienne qui est jouable dans le navigateur ! Je pense que c'est toujours assez addictif donc j'espère que vous apprécierez!</p>
+            </div>
+            <div class="links">
+                <a class="github" target="_blank" href="https://github.com/nekomask/project2_refactor"><img class="globe" src="./public/images/github-mark.png"></a>
+                <a class="deployed-site" target="_blank" href="games/TrailsJS/trails.html"><img class="globe" src="./public/images/globe.png"></a>
+            </div>
+        </div>
+    </div>
+    
+<br>
+
+
+
+<!-- Contact Form -->
+<div class="form-container">
+    <h2>Contact Me</h2>
+    <form id ="contactForm" action="javascript:void(0);" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+    <ul id="links">
+        <li><a id="links" href="https://www.linkedin.com/in/brandonkiefer-se/" target="_blank">LinkedIn</a></li>
+        <li>Email: volaju@gmail.com</li>
+        <li><a id="links" href="https://github.com/nekomask" target="_blank">Github</a></li>
+    </ul>
+    </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="geolocation.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

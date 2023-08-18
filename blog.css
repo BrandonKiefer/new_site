@@ -200,9 +200,21 @@ footer ul li {
 }
 
 .navbar.open {
-  max-height: 200px;
+  max-height: 420px;
 }
 
+
+/* Blog array of CDT messages */
+#scrollingDiv {
+  height: 120px; /* fixed height */
+  overflow-y: auto; /* allow scrolling if content exceeds the height */
+  border: 1px solid #ccc;
+  padding: 1rem;
+  color: rgb(1, 87, 1);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem; /* give some space below the div */
+}
 
 
 /* Mobile responsive media queries */
@@ -245,6 +257,11 @@ footer ul li {
   .navbar a:hover {
     background-color: #555;
   }
+}
+
+#scrollingDiv {
+  font-size: 0.8rem;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
