@@ -1,6 +1,6 @@
-// Blog
+/* Blog */
 
-/* auto-scrolling an array of strings */
+// Auto-scrolling an array of strings */
 
 $(document).ready(function() {
   console.log("Script is running!");
@@ -22,6 +22,26 @@ $(document).ready(function() {
   setInterval(updateDivContent, 5000);
 });
 
+/*Nav Menu */
+
+let lastScrollTop = 0;
+const nav = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        nav.classList.add('hidden'); // add the hidden class
+    } else {
+        // Scrolling up
+        nav.classList.remove('hidden'); // remove the hidden class
+    }
+    lastScrollTop = currentScrollTop;
+}, false);
+
+
+
+/* Image Carousel */
 
 // Keep track of the index of the currently displayed image
 let currentImageIndex = 0;
