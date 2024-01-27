@@ -75,7 +75,12 @@ li {
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  background-image: linear-gradient(rgb(63, 77, 114), rgb(218, 218, 255),  rgb(125, 160, 125));
+}
+
 main {
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,9 +330,10 @@ div.games {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   font-family: 'Arial', sans-serif;
-  width: 80%;
+  max-width: 750px;
+  width: 45%;
   color: #333;
   background: #f2f2f2;
   border-radius: 10px;
@@ -409,7 +415,7 @@ iframe#youtube {
   max-width: 560px; /* set a max-width to keep the video from getting too large */
   height: 315px;
   margin-bottom: 20px; /* add some spacing */
-  border: 5px solid purple; /* reduce the border size for a cleaner look */
+  border: 5px solid #997d99; /* reduce the border size for a cleaner look */
 }
 
 
@@ -422,6 +428,7 @@ iframe#youtube {
   margin-bottom: 59px;
   padding: 20px;
   border: 1px solid #ccc;
+  background-color: rgb(81, 106, 107);
 }
 
 input,
