@@ -59,6 +59,12 @@ div#language {
   margin-right: 15px;
 }
 
+li:hover{
+  transition: .5s;
+  color: white;
+  background-color: black;
+}
+
 nav {
   display: flex;
   flex-direction: column;
