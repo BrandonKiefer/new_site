@@ -39,8 +39,10 @@ window.addEventListener('scroll', function() {
     lastScrollTop = currentScrollTop;
 }, false);
 
-let thisYear = new Date
-document.getElementById("copyright").append("Copyright © Brandon Kiefer " + thisYear.getFullYear());
+document.addEventListener("DOMContentLoaded", function() {
+  let thisYear = new Date();
+  document.getElementById("copyright").append("Copyright © Brandon Kiefer " + thisYear.getFullYear());
+});
 
 
 /* Image Carousel */
